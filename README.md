@@ -7,7 +7,7 @@ combined with the research background that the resolution of traffic signs in re
 Our final effect is shown below：
 ![image](https://github.com/YufeiHU-fr/Traffic-Sign-Recognition/blob/master/yolov3/detection/3.jpg)
 
-For video detection, we get the following results：
+For video detection, we get the following result：
 ![image](https://github.com/YufeiHU-fr/Traffic-Sign-Recognition/blob/master/yolov3/detection_video/20200203190223.png)
 
 Because the weight file is too large to upload to github, you can download the weight file at the following linkhttps://pan.baidu.com/s/1dgakcAvoYS85eyEvztt5lA 
