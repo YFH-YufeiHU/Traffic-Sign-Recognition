@@ -5,7 +5,7 @@ With the development of intelligent transportation, traffic sign recognition sys
 combined with the research background that the resolution of traffic signs in real scenes is relatively small and the detection speed of small targets is guaranteed by the YOLOv3 algorithm, the YOLOv3 algorithm is finally selected to complete the identification of traffic signs.And compared with other algorithms.Among them, darknet-53 extracts the characteristics of the input image. The feature extraction network is a Residual network formed by Residual unit, which can effectively control the spread of gradient and prevent gradient explosion or disappearance, etc., which is not conducive to training.Compared with other algorithms in the YOLO series, the accuracy is significantly improved.After that, the semantic fusion method similar to Fpn feature pyramid was adopted in layer 75-105 to fuse the high-level features of low-resolution and high-semantic information with the low-level features of high-resolution and low-semantic information.To improve the detection accuracy of traffic signs that take up a small proportion in the image.
 
 With the method of MAP,we can get the Traffic sign detection distribution:
-!image[]
+!image[https://github.com/YufeiHU-fr/Traffic-Sign-Recognition/blob/master/results/detection-results-info.png]
 
 Our final effect is shown below：
 ![image](https://github.com/YufeiHU-fr/Traffic-Sign-Recognition/blob/master/yolov3/detection/3.jpg)
