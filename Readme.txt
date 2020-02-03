@@ -1,42 +1,42 @@
 ###############finalVersion#################
 detection		--Store the results of picture detection
-detecttion_video	--存放检测的视频结果
+detecttion_video	--Store the results of video detection
 font--
-logs--backup_txt_map	--存放检测的信息文本txt
-    --video		--存放待检测的视频
-    --vol_images_set	--存放待检测的图像
-    			--存放模型文件
-model_data		--存放训练的样本类别以及先验框大小信息
-utils			--存放json转txt程序代码
-     			--数据增强前后的样本分布统计
-     			--样本统计程序(statistics_utils)
-     			--txt转xml程序代码
-    			--xml转txt程序代码
-     			--数据增强代码(XMLaug_utils)
-yolo3			--存放yolov3的模型程序代码
-     			--存放构建模型所使用的部分函数(utils)
-convert			--暂未用到
-kmeans			--聚类算法
-models			--存放mongodb数据库的链接程序
-train_policy		--存放训练策略程序
-user_predict		--存放图像检测程序，图片的输入
-voc_annotation		--根据voc格式的数据制作训练样本
-yolo			--存放检测的接口（检测视频和图像底层函数）
-yolo_video		--存放视频检测程序，视频输入
+logs--backup_txt_map	--Store the test information
+    --video		--Store videos to be detected
+    --vol_images_set	--Store images to be detected
+    			--Store model files
+model_data		--Store training sample categories and prior box size information
+utils			--Store json to txt program code
+     			--Sample distribution statistics before and after data enhancement
+     			--Sample statistics program(statistics_utils)
+     			--txt to xml program code
+    			--xml to txt program code
+     			--Data Enhancement Code(XMLaug_utils)
+yolo3			--Stores Yolov3's network structure model program code
+     			--Stores some functions used to build the model(utils)
+convert			--
+kmeans			--Clustering Algorithm
+models			--Linker to store mongodb database
+train_policy		--Store training strategy program
+user_predict		--Store image detection program(where we input the image to be detected)
+voc_annotation		--Make training samples based on data in voc format
+yolo			--Stores the detection interface (detects the underlying functions of the video and image)
+yolo_video		--Store video detection program(where we input the video to be detected)
 ###############mAP-master#################
-input--detection-results--检测的结果，需txt文本
-     --ground-truth	--图像的标签文件，需txt文本
-     --images-optional	--检测的图像（可选）
-results			--mAP计算的结果
-scripts			--文件格式转化程序
-main			--mAP计算主程序
+input--detection-results--Test results, txt text required
+     --ground-truth	--Image tag file, need txt text
+     --images-optional	--Detected image (optional)
+results			--mAP calculation results
+scripts			--File format converter
+main			--mAP calculation main program
 ###############VOCdevkit#################
-Annotations		--图像的标签文件(xml)
-backup			--备份文件
-ImageSets		--存放待训练的文本信息
-JPEGImages		--存放图像数据集
-test			--将数据集按照一定的比例转化成训练样本、验证集、测试集，相关信息存储在JPEGImages的Main文件夹下
+Annotations		--Image tag file (xml)
+backup			--backup file
+ImageSets		--Store text messages to be trained
+JPEGImages		--Store image dataset
+test			--The data set is converted into a training sample, a validation set, and a test set
 ###############mongodb#################
-			--mongodb数据库环境
+			--mongodb database environment
 ###############robo 3t#################
-.exe			--mongodb数据库可视化软件
+.exe			--MongoDB database visualization software
