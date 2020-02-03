@@ -13,3 +13,4 @@ For video detection, we get the following results：
 Because the weight file is too large to upload to github, you can download the weight file at the following linkhttps://pan.baidu.com/s/1dgakcAvoYS85eyEvztt5lA 
 password：6l32
 
+The link of my linkedin is :https://www.linkedin.com/in/%E5%AE%87%E9%A3%9E-%E8%83%A1-712911197
