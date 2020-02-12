@@ -54,17 +54,17 @@ def convert_annotation(year, image_id, list_file,is_writing,wd, year1, image_id1
         for obj in root.iter('object'):
             difficult = obj.find('difficult').text
             cls = obj.find('name').text
-            if cls not in classes_need_augmented or int(difficult) == 1:#如果类不在需要增强的类内，则跳出当前循环
+            if cls not in classes_need_augmented or int(difficult) == 1:#If the class is not in the class that needs to be enhanced, then break out of the current loop
                 continue
-            cls_id = classes_need_augmented.index(cls)#找出需要增强库的索引
+            cls_id = classes_need_augmented.index(cls)#Find out which indicators need to be strengthened
             #if classes_need_augmented[cls_id] ==0:
-            #将找到的需要增强的类的图像转换到已选的位置
+            #Convert the image of the found class that needs to be enhanced to the selected position
             img = cv2.imread('G:/github/Yolov3/VOCdevkit/VOC2007/JPEGImages/'+str(image_id1)+'.jpg')
             emptyImage = np.zeros(img.shape, np.uint8)
             emptyImage = img.copy()
             cv2.imwrite('./utils/ClassNeedBeAugmented/'+str(classes_need_augmented[cls_id])+'/'+str(image_id1)+'.jpg', emptyImage)
             shutil.copy('G:/github/Yolov3/VOCdevkit/VOC2007/Annotations/'+str(image_id1)+'.xml',\
-                        './utils/ClassNeedBeAugmented/' + str(classes_need_augmented[cls_id]) + '/xml/')#将对应的xml文件复制到对饮增强类的xml文件
+                        './utils/ClassNeedBeAugmented/' + str(classes_need_augmented[cls_id]) + '/xml/')#Copy the corresponding xml file to the xml file of the enhancement class
 
 def generate_files(is_writing,is_augmented):
     # wd = getcwd()
